@@ -38,6 +38,7 @@ class CandleProxy(
 
         embeddedServer(Netty, port) {
             install(DefaultHeaders)
+            install(Compression)
 
             routing {
                 get("/candles") {
