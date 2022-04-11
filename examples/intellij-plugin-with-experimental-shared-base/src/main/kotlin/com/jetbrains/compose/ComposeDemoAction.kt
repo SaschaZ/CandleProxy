@@ -32,6 +32,7 @@ import javax.swing.SwingUtilities
 class ComposeDemoAction : DumbAwareAction() {
     override fun actionPerformed(e: AnActionEvent) {
         DemoDialog(e.project).show()
+
     }
 
     class DemoDialog(project: Project?) : DialogWrapper(project) {
